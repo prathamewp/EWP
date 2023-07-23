@@ -1,0 +1,331 @@
+
+.project-cta {
+  padding: 20px;
+  width: 28rem;
+  height: 28rem;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 5px solid var(--color-white);
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2), inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  position: relative;
+}
+
+.project-cta:before {
+  content: "";
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  border: 2px solid #efefef;
+  border-radius: 50%;
+  left: -30%;
+  bottom: -20%;
+  z-index: -1;
+}
+
+
+.project-cta h4 {
+  font-size: 3rem;
+  font-weight: var(--regular);
+}
+/* Other Services */
+
+.other-services {
+  padding: 3rem 0 8rem;
+}
+
+.other-services-right .sec-head {
+  position: relative;
+  top: 6rem;
+}
+
+.other-services-right .sec-head:before {
+  content: "";
+  position: absolute;
+  left: -3.5rem;
+  top: -2rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgb(255, 185, 0);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.other-services-right .sec-head:after {
+  content: url(../img/circle-dashed-small.png);
+  position: absolute;
+  left: -8%;
+  top: -35%;
+}
+
+.service:link,
+.service:active,
+.service:focus {
+  width: 17rem;
+  height: 17rem;
+  clip-path: var(--shape-polygon);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  color: var(--color-white);
+  transform: translateY(0);
+  transition: 1s;
+}
+
+.service:hover {
+  transform: translateY(-0.8rem);
+}
+
+.service img {
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.service h5 {
+  font-size: 1.5rem;
+  color: inherit;
+  text-align: center;
+}
+
+.service:hover h5 {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.service-wrap.wrap2 {
+  margin-left: -8rem;
+  margin-top: -3rem;
+}
+
+.services-box {
+  position: relative;
+  margin-left: 2rem;
+}
+
+.wrap1 {
+  position: relative;
+}
+
+.wrap1:after {
+  content: url(../img/circle-dashed.png);
+  position: absolute;
+  right: -17%;
+  top: 48%;
+  z-index: -1;
+}
+/* Blogs */
+
+.blogs-panel {
+  padding-bottom: 13.2rem;
+}
+/* Accordian 2 CSS */
+
+.accordian2 .card,
+.accordian2 .card .btn-link {
+  border: none;
+}
+
+.accordian2 .card .btn-link {
+  font-size: 2rem;
+  font-weight: var(--bold);
+  color: var(--color-black);
+  margin-top: 0;
+  text-align: left;
+  background: transparent;
+  display: block;
+  width: 100%;
+  border-bottom: none !important;
+  padding: 1.5rem 4rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2) !important;
+}
+
+.accordian2 .card .btn-link.collapsed {
+  box-shadow: none !important;
+  border-bottom: 1px dashed #acaeb5 !important;
+}
+
+.accordian2 .card .btn-link.collapsed::after {
+  content: "\f106";
+}
+
+.accordian2 .card .btn-link::after {
+  content: "\f107";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  color: var(--color-black);
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+}
+
+.accordian2 .card .card-header {
+  padding: 0;
+  margin-bottom: 0;
+  background: transparent;
+  border-bottom: 0;
+}
+
+.accordian2 .card .card-body {
+  font-size: 1.6rem;
+  font-weight: var(--regular);
+  color: var(--color-dark-grey-4);
+  padding: 0;
+  line-height: 2.6rem;
+  margin-bottom: 0;
+}
+
+.accordian2 .card .card-body .body-content {
+  padding: 2rem 4rem;
+}
+
+.accordian2 .card .card-body .body-content p {
+  font-size: 1.8rem;
+}
+
+
+/* Our Presence */
+
+.presence-sec {
+  padding: 13rem 0 2rem;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(243, 246, 248, 1) 100%
+  );
+  position: relative;
+  z-index: -2;
+}
+
+.presence-sec .sec-head::before {
+  content: "";
+  position: absolute;
+  left: -3rem;
+  top: -3.2rem;
+  width: 9.5rem;
+  height: 9.5rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.presence-sec .sec-head::after {
+  content: url(../img/circle-dashed-small.png);
+  position: absolute;
+  left: -1rem;
+  top: -10rem;
+}
+
+.industries-serve h4 {
+  font-size: 2rem;
+  font-weight: var(--bold);
+  margin: 8rem 0 2rem;
+  text-align: center;
+}
+
+.industries-serve li {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin: 0 1rem 1rem ;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3px 1.5rem;
+  line-height: inherit;
+  transition: 0.5s;
+}
+
+.industries-serve li::before {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: 5px solid #f6f8fa;
+}
+/* Internal LInks */
+
+.header-links.links-fixed {
+  position: fixed;
+  /* top: 2.5rem; */
+  top: 5rem;
+  background: var(--color-white);
+  z-index: 100;
+  padding: 1rem 0 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.header-links.links-fixed ul > li > a {
+  width: inherit;
+  height: inherit;
+  border-radius: 0;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #ffffff;
+  transition: 0.5s;
+}
+
+
+.mt-minus-80{margin-top: -80px;}
+.mt-minus-120{margin-top: -120px;}
+@media only screen and (max-width: 991px) {
+  .mt-minus-120,.mt-minus-80{margin-top: -30px;}
+  
+  .main-banner {
+    background-image: none;
+  }
+  .banner-right-hex {
+    background-image: none;
+    background-color: var(--color-red-1);
+    width: auto !important;
+    height: auto !important;
+    text-align: left !important;
+    padding: 4rem 3rem 1rem;
+    margin-top: 0 !important;
+    border-radius: 0.6rem;
+  }
+  .banner-right-hex:before,
+  .banner-right-hex:after,
+  .usability:before,
+  .usability-panel:before,
+  #web-redesign-slider .carousel-item:before,
+  .web-design-tabber:after,
+  .resp-design-box:before,
+  .project-cta:before,
+  .other-services-right .sec-head:before,
+  .other-services-right .sec-head:after,
+  .wrap1:after {
+    display: none;
+  }
+  
+  .project-cta {
+    width: inherit;
+    height: inherit;
+    padding: 6rem;
+    border: 5px solid var(--color-white);
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4) 0px 0px 1rem 0.2rem inset;
+  }
+  .project-cta h4 br,
+  .points-list li.media:first-child .media-left::before,
+  .points-list li.media:not(:last-child) .media-left:after {
+    display: none;
+  }
+  .other-services {
+    padding: 3rem 0 0;
+  }
+  
+
